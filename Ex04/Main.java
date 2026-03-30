@@ -19,14 +19,17 @@ Crie uma classe `Biblioteca` que tenha uma lista de livros como atributo. Implem
 Crie um arquivo Main.java que teste a classe biblioteca. Adicione livros à biblioteca, empreste e devolva alguns, e exiba o estado dos livros usando o método `ListarLivros()`. */
 public class Main {
     public static void main(String[] args) {
-        Livro livro1 = new Livro("O Senhor dos Anéis", "J.R.R. Tolkien");
-        Livro livro2 = new Livro("1984", "George Orwell");
-        Livro livro3 = new Livro("A Revolução dos Bichos", "George Orwell");
+        Livro l1 = new Livro("O Senhor dos Anéis", "J.R.R. Tolkien");
+        Livro l2 = new Livro("1984", "George Orwell");
+        Livro l3 = new Livro("A Revolução dos Bichos", "George Orwell");
+        Livro l4 = new Livro("O Pequeno Príncipe", "Antoine de Saint-Exupéry");
+
 
         Biblioteca biblioteca = new Biblioteca(new java.util.ArrayList<>());
-        biblioteca.AdicionarLivro(livro1);
-        biblioteca.AdicionarLivro(livro2);
-        biblioteca.AdicionarLivro(livro3);
+        biblioteca.AdicionarLivro(l1);
+        biblioteca.AdicionarLivro(l2);
+        biblioteca.AdicionarLivro(l3);
+        biblioteca.AdicionarLivro(l4);
 
         System.out.println("Livros disponíveis na biblioteca:");
         biblioteca.getLivros();

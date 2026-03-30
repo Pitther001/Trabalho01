@@ -9,7 +9,7 @@ public class Forno {
     private boolean ligado = false;
     public int timer;
 
-    public Forno(int volume, int tensao, int potencia, int altura, int largura, int profundidade) {
+    public Forno(int volume, int tensao, int potencia, int largura, int altura, int profundidade) {
         this.volume = volume;
         this.tensao = tensao;
         this.potencia = potencia;
@@ -64,6 +64,9 @@ public class Forno {
     public void setTimer(int tempo){
         if(tempo >=1 && tempo <=120){
             this.timer = tempo;
+            if (!ligado) {
+                aumentarTemperatura();
+            }
         }
     }
 
