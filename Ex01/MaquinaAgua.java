@@ -1,4 +1,4 @@
-package Trabalho01.Ex01;
+package Ex01;
 
 public class MaquinaAgua {
     private int copos200;
