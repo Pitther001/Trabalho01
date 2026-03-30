@@ -33,6 +33,12 @@ public class Main {
 
         System.out.println("Livros disponíveis na biblioteca:");
         biblioteca.getLivros();
+        
+        System.out.println("\nEmprestando 'O Senhor dos Anéis'...");
+        biblioteca.EmprestarLivro("O Senhor dos Anéis");
+
+        System.out.println("\nEmprestando 'O Senhor dos Anéis'...");
+        biblioteca.EmprestarLivro("O Senhor dos Anéis");
 
         System.out.println("\nEmprestando '1984'...");
         biblioteca.EmprestarLivro("1984");

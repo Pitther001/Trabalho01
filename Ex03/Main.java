@@ -22,6 +22,7 @@ public class Main {
         conta.depositar(300.0);
         conta.depositar(2000.0);
         conta.sacar(1500.0);
+        conta.sacar(100000.0);
         System.out.println("Saldo atual: R$" + conta.consultarSaldo());
         
         /*System.out.println("Histórico de transações:");
